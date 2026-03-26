@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS Apparel | Exclusive Access</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; padding: 20px; background: #1a1a1a; color: white;">
+        <div class="logo" style="font-weight: bold; font-size: 24px;">SSS APPAREL</div>
+        <button id="connectBtn" onclick="initSSS()" style="padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 5px;">Connect Wallet</button>
+    </header>
+
+    <main style="text-align: center; margin-top: 50px;">
+        <h1 id="statusMsg">Silakan hubungkan dompet Anda.</h1>
+
+    <div id="exclusiveContent" class="hidden"> 
+        <div class="card">
+            <img src="https://ipfs.io/ipfs/bafkreiaervn6xrzpzqowshkf35nydcqfsvpvoybiu373j2hry27hyhn4m" width="300" alt="SSS Founder Hoodie">
+        
+            <h2>SSS Founder Golden Scarf</h2>
+            <p>Status: TERVERIFIKASI (Holder)</p>
+
+            <button class="buy-btn" onclick="bayarProduk()" style="margin-top: 20px; background-color: #28a745; color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+            Claim Sekarang (0.01 ETH)
+            </button>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.2/ethers.umd.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
